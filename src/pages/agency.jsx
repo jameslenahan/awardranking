@@ -13,24 +13,18 @@ function Agency(){
 
 
 
-
-        
-        
-        
-        function createEntry() {
-            axios.post(baseURL, {
-                name: entryname,
-                description: entrydescription,
-                deadline: entrydeadline,
-                rating: entryrating,
-                typeofaward: entrytype,
-                cost: entrycost,
-                url: entryurl
-            })
-            .then((response) => {
-                setEntry(response.data)
-            })
+    useEffect(() => {
+        axios.get(baseURL, {
+           
+       
+        })
+        .then((response) => {
+            entryList(response.data)
         }
+        )
+    }, []);
+        
+    
 
     
 

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios"
 import '../App.css'
-
+import NavBar from '../components/NavBar'
 const baseURL = "http://127.0.0.1:3000/entries"
 
 function Home(){
@@ -43,7 +43,7 @@ function Home(){
                 setEntry(response.data)
             })
         }
-
+        console.log(list)
     
 
         
@@ -58,6 +58,9 @@ function Home(){
         
             <html>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+            <NavBar>
+                
+            </NavBar>
             <section class="hero" style={{marginLeft: "7.5vw"}}>
                 <div class="hero-body">
                     <p class="title">
