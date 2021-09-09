@@ -3,6 +3,8 @@ import axios from "axios"
 import '../App.css'
 import NavBar from '../components/NavBar'
 const baseURL = "http://127.0.0.1:3000/entries"
+const agencyURL = "http://127.0.0.1:3000/agencies"
+
 
 function Home(){
     const [entry, setEntry] = React.useState(null)

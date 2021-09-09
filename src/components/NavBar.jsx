@@ -21,13 +21,13 @@ function NavBar(){
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
             <div class="navbar-menu">
                 <div class="navbar-start">
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="/">
                         Awards
                         </a>
                 </div>
 
                 <div class="navbar-end">
-                <a class="navbar-item">
+                <a class="navbar-item" href='/agencies'>
                         Agency Dashboard
                         </a>
                 </div>
